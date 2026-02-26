@@ -2,122 +2,191 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lucien Bisiaux - Portfolio</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f3f4f6;
-    color: #1f2937;
-}
-header {
-    background: #111827;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-}
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
-}
-.project {
-    background: white;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-h2 {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 10px;
-}
-.button {
-    display: inline-block;
-    padding: 12px 18px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
+  body { font-family: Arial, sans-serif; margin: 0; background-color: #f3f4f6; color: #1f2937; }
+  header { background: #111827; color: white; padding: 60px 20px; text-align: center; }
+  header h1 { margin: 0; font-size: 36px; }
+  header p { margin-top: 10px; font-size: 18px; }
+  section { max-width: 1000px; margin: auto; padding: 50px 20px; }
+  h2 { margin-bottom: 20px; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; }
+  .project { background: white; padding: 25px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: white; padding: 18px; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .card h3 { margin: 0 0 8px 0; font-size: 18px; }
+  .meta { font-size: 13px; color: #6b7280; margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .tag { background: #eef2ff; color: #3730a3; padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+  .button { display: inline-block; padding: 12px 18px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; margin-top: 15px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 14px 0 22px; }
+  input, select { padding: 10px 12px; border-radius: 10px; border: 1px solid #e5e7eb; background: white; }
+  footer { background: #111827; color: white; text-align: center; padding: 25px; }
+  .muted { color: #6b7280; }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Lucien Bisiaux</h1>
-<p>Élève en STI2D — Passionné d’ingénierie, conception mécanique et systèmes techniques</p>
+  <h1>Lucien Bisiaux</h1>
+  <p>Élève en STI2D — Projets d’ingénierie, conception mécanique et systèmes techniques</p>
 </header>
 
 <section>
-<h2>Profil</h2>
-<p>
-Actuellement en STI2D, je développe en autonomie des projets techniques intégrant
-conception structurelle, calculs de forces, systèmes embarqués et domotique.
-Je participe aux Olympiades des Sciences de l’Ingénieur où je coordonne un projet d’équipe.
-</p>
+  <h2>Profil</h2>
+  <p>
+    Actuellement en STI2D, je réalise des projets techniques intégrant conception structurelle, calculs,
+    prototypage et systèmes (dont domotique). Je participe aux Olympiades des Sciences de l’Ingénieur
+    au sein d’un projet d’équipe.
+  </p>
+
+  <a class="button" href="https://github.com/LucienBisiaux" target="_blank" rel="noopener">
+    Voir mon profil GitHub
+  </a>
 </section>
 
 <section>
-<h2>Projets techniques</h2>
+  <h2>Projets mis en avant</h2>
 
-<div class="project">
-<h3>Mur d’escalade amovible</h3>
-<p>
-Conception complète d’un mur modulable avec étude des contraintes mécaniques,
-dimensionnement des supports, calculs de forces et choix des matériaux.
-</p>
-</div>
+  <div class="project">
+    <h3>Mur d’escalade amovible</h3>
+    <p>Conception d’un mur modulable (3 panneaux) avec étude des contraintes et choix des matériaux.</p>
+  </div>
 
-<div class="project">
-<h3>Porte-skis arrière pour véhicule</h3>
-<p>
-Développement d’un système de fixation robuste résistant aux charges dynamiques
-et aux vibrations en mouvement.
-</p>
-</div>
+  <div class="project">
+    <h3>Porte-skis arrière pour véhicule</h3>
+    <p>Système de fixation robuste adapté aux contraintes dynamiques et à la sécurité en mouvement.</p>
+  </div>
 
-<div class="project">
-<h3>Domotisation de maison</h3>
-<p>
-Installation et programmation d’un système domotique intégrant capteurs,
-automatisation et optimisation énergétique.
-</p>
-</div>
+  <div class="project">
+    <h3>Domotisation de maison</h3>
+    <p>Automatisation, capteurs et optimisation de certains usages (confort / énergie).</p>
+  </div>
 
-<div class="project">
-<h3>Olympiades des Sciences de l’Ingénieur</h3>
-<p>
-Projet collaboratif complexe avec gestion d’équipe, coordination technique
-et prise de décisions stratégiques.
-</p>
-</div>
-
-<a class="button" href="https://github.com/LucienBisiaux" target="_blank">
-Voir mon profil GitHub complet
-</a>
-
+  <div class="project">
+    <h3>Olympiades des Sciences de l’Ingénieur</h3>
+    <p>Projet collaboratif : coordination, choix techniques, prototypage et itérations.</p>
+  </div>
 </section>
 
-<footer>
-© 2026 Lucien Bisiaux
-</footer>
+<section>
+  <h2>Tous mes projets GitHub</h2>
+  <p class="muted">Liste automatique de mes dépôts publics (triable et recherchable).</p>
+
+  <div class="row">
+    <input id="search" type="text" placeholder="Rechercher un projet (nom / description)…" />
+    <select id="sort">
+      <option value="updated">Tri : dernière mise à jour</option>
+      <option value="stars">Tri : étoiles</option>
+      <option value="name">Tri : nom (A→Z)</option>
+    </select>
+    <select id="filter">
+      <option value="all">Filtre : tout</option>
+      <option value="no-forks">Sans forks</option>
+      <option value="no-pages">Sans le site (.github.io)</option>
+    </select>
+  </div>
+
+  <div id="repos" class="grid"></div>
+  <p id="status" class="muted"></p>
+</section>
+
+<footer>© 2026 Lucien Bisiaux</footer>
+
+<script>
+  const username = "LucienBisiaux";
+  const apiUrl = `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`;
+
+  const reposEl = document.getElementById("repos");
+  const statusEl = document.getElementById("status");
+  const searchEl = document.getElementById("search");
+  const sortEl = document.getElementById("sort");
+  const filterEl = document.getElementById("filter");
+
+  let repos = [];
+
+  function formatDate(iso) {
+    const d = new Date(iso);
+    return d.toLocaleDateString("fr-FR", { year: "numeric", month: "short", day: "numeric" });
+  }
+
+  function render(list) {
+    reposEl.innerHTML = "";
+    if (!list.length) {
+      reposEl.innerHTML = `<div class="card"><strong>Aucun projet trouvé.</strong><div class="muted">Change la recherche/filtre.</div></div>`;
+      return;
+    }
+
+    list.forEach(r => {
+      const desc = r.description ? r.description : "Pas de description.";
+      const lang = r.language ? r.language : "—";
+      const stars = r.stargazers_count ?? 0;
+
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <h3><a href="${r.html_url}" target="_blank" rel="noopener">${r.name}</a></h3>
+        <div class="muted">${desc}</div>
+        <div class="meta">
+          <span class="tag">Langage : ${lang}</span>
+          <span class="tag">★ ${stars}</span>
+          <span class="tag">MAJ : ${formatDate(r.updated_at)}</span>
+        </div>
+      `;
+      reposEl.appendChild(card);
+    });
+  }
+
+  function apply() {
+    const q = searchEl.value.trim().toLowerCase();
+    const sortMode = sortEl.value;
+    const filterMode = filterEl.value;
+
+    let list = [...repos];
+
+    // filtres
+    if (filterMode === "no-forks") list = list.filter(r => !r.fork);
+    if (filterMode === "no-pages") list = list.filter(r => !r.name.toLowerCase().endsWith(".github.io"));
+
+    // recherche
+    if (q) {
+      list = list.filter(r =>
+        (r.name && r.name.toLowerCase().includes(q)) ||
+        (r.description && r.description.toLowerCase().includes(q))
+      );
+    }
+
+    // tri
+    if (sortMode === "name") list.sort((a,b) => a.name.localeCompare(b.name));
+    if (sortMode === "stars") list.sort((a,b) => (b.stargazers_count||0) - (a.stargazers_count||0));
+    if (sortMode === "updated") list.sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+    render(list);
+  }
+
+  async function loadRepos() {
+    statusEl.textContent = "Chargement des projets…";
+    try {
+      const res = await fetch(apiUrl, { headers: { "Accept": "application/vnd.github+json" } });
+      if (!res.ok) throw new Error(`Erreur API GitHub (${res.status})`);
+      repos = await res.json();
+
+      // Option : n'afficher que les repos publics + pas les repos vides (si tu veux)
+      repos = repos.filter(r => !r.private);
+
+      statusEl.textContent = `Projets chargés : ${repos.length}`;
+      apply();
+    } catch (e) {
+      statusEl.textContent = "Impossible de charger la liste automatiquement. (Tu peux quand même cliquer sur le lien GitHub en haut.)";
+      reposEl.innerHTML = `<div class="card"><strong>Erreur :</strong> ${e.message}</div>`;
+    }
+  }
+
+  searchEl.addEventListener("input", apply);
+  sortEl.addEventListener("change", apply);
+  filterEl.addEventListener("change", apply);
+
+  loadRepos();
+</script>
 
 </body>
 </html>
