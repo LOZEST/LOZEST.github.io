@@ -18,3 +18,7 @@ Chaque ligne conserve ses URL sources, le périmètre des statistiques et ses no
 Les rapprochements entre années sont explicites. Les changements de concours ENSMA/EIVP restent séparés ; le quota CentraleSupélec apprentissage Metz/Rennes est regroupé, et Polytech 2026 est un quota réseau. Ne pas sommer les lignes historiques et les agrégats : elles se recoupent. Les lignes uniquement inter-filières ne sont pas attribuées artificiellement à TSI. Le détail historique (801 places/678 intégrés) ne coïncide pas exactement avec le bilan national publié (806/686) ; les valeurs originales sont conservées.
 
 Pour une mise à jour, vérifier la session, le campus, le diplôme et le statut, puis changer les données, les dates et les compteurs éditoriaux ensemble. Les contenus de formation complémentaires proviennent de `../profiles.js` ; ils ne modifient pas les chiffres de concours.
+
+## Lecture des concours et des effectifs
+
+La page présente les deux grandes banques d’épreuves écrites TSI, Centrale-Supélec et CCINP, sans assimiler cela à deux inscriptions uniques ni exclure les épreuves spécifiques. Sources : présentation officielle Centrale-Supélec et règlement CCINP 2026. La colonne admissibles reprend `eligible2025` ; son périmètre est indiqué dans les fiches et les effectifs communs ne doivent pas être additionnés. Les résultats passés sont indicatifs pour l’orientation, les quotas restent attachés au millésime annoncé.
